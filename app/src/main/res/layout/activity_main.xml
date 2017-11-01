@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.irenesohn.menuscreen.MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp"
+    android:background="@drawable/menu_screen">
+
+    <ImageButton
+        android:id="@+id/map_button"
+        android:layout_width="0dp"
+        android:layout_height="93dp"
+        android:layout_marginBottom="34dp"
+        app:layout_constraintBottom_toTopOf="@+id/carmera_button"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/carmera_button"
+        app:layout_constraintRight_toRightOf="@+id/carmera_button"
+        app:srcCompat="@drawable/map_button"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <ImageButton
+        android:id="@+id/carmera_button"
+        android:layout_width="103dp"
+        android:layout_height="99dp"
+        app:srcCompat="@drawable/camera_button"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="77dp"
+        app:layout_constraintBottom_toBottomOf="@+id/info_button"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/info_button"
+        android:layout_marginLeft="77dp"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/info_button"
+        android:layout_width="98dp"
+        android:layout_height="107dp"
+        app:srcCompat="@drawable/info_button"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        android:layout_marginEnd="77dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="34dp"
+        android:layout_marginRight="77dp" />
+
+    <ImageButton
+        android:id="@+id/memo_button"
+        android:layout_width="0dp"
+        android:layout_height="93dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/info_button"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/info_button"
+        app:layout_constraintRight_toRightOf="@+id/info_button"
+        app:srcCompat="@drawable/memo_button"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="450dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/hello"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+</android.support.constraint.ConstraintLayout>
